@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sps.css" />
+  </head>
+  <body>
+    <h1>stone paper scissors</h1>
+    <button
+      onclick="
+    play('stone');"
+      class="move"
+    >
+      <img src="stone-emoji.png" alt="rock" class="icon" />
+    </button>
+
+    <button
+      onclick="
+     play('paper');   "
+      class="move"
+    >
+      <img src="paper-emoji.png" alt="paper" class="icon" />
+    </button>
+
+    <button onclick=" play('scissors');" class="move">
+      <img src="scissors-emoji.png" alt="sci" class="icon" />
+    </button>
+
+    <p class="js-result text"></p>
+    <p class="js-moves text"></p>
+    <p class="js-score text"></p>
+
+    <button
+      onclick="score.win=0;
+    score.lost=0;score.tie=0; updscore();"
+      class="reset"
+    >
+      reset
+    </button>
+
+    <script src="sps.js"></script>
+  </body>
+</html>
